@@ -7,6 +7,7 @@ import Contact from "./Contact";
 import Team from "./Team";
 import NotFound from "./NotFound";
 import CurrentLocation from "./CurrentLocation";
+import Dashboard from "./Dashboard";
 function App() {
   /*
   / -> Home
@@ -58,6 +59,7 @@ function App() {
                 <Route path="team" element={<Team />} />
               </Route>
               <Route path="/contact" element={<Contact />} />l
+              <Route path="/dashboard" element={<Dashboard />} />l
               <Route path="*" element={<NotFound />} />
             </Routes>
           </div>
