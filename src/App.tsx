@@ -1,20 +1,13 @@
-import { useState } from "react";
-import heroImg from "./assets/hero.png";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "./assets/vite.svg";
 import "./App.css";
+import DarkModeToggle from "./DarkModeToggle";
 
 function App() {
   return (
-    <div className="bg-gray-100 p-2">
-      <ul className="list-none md:flex md:gap-4">
-        <li className="bg-custom-blue text-white p-2 m-2 rounded-lg md:px-4">
-          Item 1
-        </li>
-        <li className="bg-custom-blue text-white p-2 m-2 rounded-lg">Item 2</li>
-        <li className="bg-custom-blue text-white p-2 m-2 rounded-lg">Item 3</li>
-        <li className="bg-custom-blue text-white p-2 m-2 rounded-lg">Item 4</li>
-      </ul>
+    <div className="bg-white  min-h-screen dark:bg-gray-900 dark:text-amber-300 ">
+      <DarkModeToggle />
+
+      <h1 className="text-2xl">Welcome to Dark Mode</h1>
+      <p>This is an example of implementing dark mode using Tailwind CSS</p>
     </div>
   );
 }
